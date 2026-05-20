@@ -1,0 +1,28 @@
+contacts = {}
+
+def add_contact(name, number):
+    contacts[name] = number
+
+def search_contact(name):
+    if name in contacts:
+        print(name, ":", contacts[name])
+    else:
+        print("Contact not found")
+
+def delete_contact(name):
+    if name in contacts:
+        del contacts[name]
+
+def display_contacts():
+    print(contacts)
+
+add_contact("Harsha", "9876543210")
+add_contact("Rahul", "9999999999")
+
+display_contacts()
+
+search_contact("Harsha")
+
+delete_contact("Rahul")
+
+display_contacts()

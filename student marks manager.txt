@@ -1,0 +1,15 @@
+marks = [78, 85, 67, 90, 72]
+
+# append
+marks.append(88)
+
+# insert
+marks.insert(2, 95)
+
+# remove
+marks.remove(67)
+
+# sort
+marks.sort()
+
+print("Updated Marks List:", marks)

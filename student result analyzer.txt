@@ -1,0 +1,22 @@
+marks = [45, 78, 90, 35, 60]
+
+def average(marks):
+    return sum(marks) / len(marks)
+
+def highest(marks):
+    return max(marks)
+
+def lowest(marks):
+    return min(marks)
+
+def passed_students(marks):
+    count = 0
+    for mark in marks:
+        if mark > 40:
+            count += 1
+    return count
+
+print("Average:", average(marks))
+print("Highest:", highest(marks))
+print("Lowest:", lowest(marks))
+print("Passed Students:", passed_students(marks))

@@ -1,0 +1,25 @@
+numbers = [10, 20, 30, 40, 50]
+
+# Find maximum
+maximum = numbers[0]
+
+for num in numbers:
+    if num > maximum:
+        maximum = num
+
+# Find minimum
+minimum = numbers[0]
+
+for num in numbers:
+    if num < minimum:
+        minimum = num
+
+# Reverse list
+reversed_list = []
+
+for i in range(len(numbers) - 1, -1, -1):
+    reversed_list.append(numbers[i])
+
+print("Maximum:", maximum)
+print("Minimum:", minimum)
+print("Reversed List:", reversed_list)

@@ -1,0 +1,19 @@
+students = []
+
+def add_student(name):
+    students.append(name)
+
+def remove_student(name):
+    students.remove(name)
+
+def display_students():
+    print("Students:", students)
+
+add_student("Harsha")
+add_student("Rahul")
+
+display_students()
+
+remove_student("Rahul")
+
+display_students()
